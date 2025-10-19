@@ -13,7 +13,6 @@ A robust RESTful API backend for expense tracking built with Express.js, MongoDB
 - [Running the Server](#running-the-server)
 - [API Documentation](#api-documentation)
 - [Testing](#testing)
-- [Brownie Points Implementation](#brownie-points-implementation)
 
 ## ✨ Features
 
