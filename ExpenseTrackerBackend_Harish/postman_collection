@@ -1,0 +1,1300 @@
+{
+	"info": {
+		"_postman_id": "2dcdccb6-6c45-44ac-97da-5829159fc9c9",
+		"name": "postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40673103"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"harish@gmail.com\",\r\n  \"password\": \"Harish123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/api/auth/register"
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"harish@gmail.com\",\r\n  \"password\": \"Harish123\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:5000/api/auth/register"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "121"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"79-7HPSvEUrkCmETgwlJ2JBcx+73iI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:03:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User registered successfully\",\n    \"uid\": \"rom4l2rwl5X8vDkYyevfrMLvS172\",\n    \"email\": \"harish@gmail.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"harish@gmail.com\",\r\n  \"password\": \"Harish123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/api/auth/login"
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"harish@gmail.com\",\r\n  \"password\": \"Harish123\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:5000/api/auth/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1334"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"536-Ed5YpxOnbou+TdwraqeswqBIKVE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:04:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Login successful\",\n    \"idToken\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA\",\n    \"refreshToken\": \"AMf-vBzBO2pIMMsMZpY4PUlvSvb0KKhbynt0_YeYSiV2P8crY47tL0m1JaBF5t-V_IU1TNkFRg7qoQApE4HL4IumWky3VE5yxkCyI0c1Bxu5av5MzSmuvjqf2w9l7Bx7W7ViGadAMv9PyGCDu0J14YR5v7skOm1kEAbwTT5U2JPKUUk4N-eqpKn-gojUn0hDPardGys5UhAicRwMnLdypR6W64m-P3K978zN6uvtAWWAu2248G3uznsmeVeJGBGIniEUlvrqZwfA\",\n    \"uid\": \"rom4l2rwl5X8vDkYyevfrMLvS172\"\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:5000/api/logout"
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "http://localhost:5000/api/logout"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "68"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44-1t0iB6hxNYAMusEja6U1D/CHhMw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:57:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Logout successful (handled client-side)\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Expense Management",
+			"item": [
+				{
+					"name": "create_expenses_food",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Lunch\",\r\n  \"amount\": 250,\r\n  \"category\": \"Food\",\r\n  \"date\": \"2025-10-19\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/api/expenses"
+					},
+					"response": [
+						{
+							"name": "create_expenses",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Lunch\",\r\n  \"amount\": 250,\r\n  \"category\": \"Food\",\r\n  \"date\": \"2025-10-19\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:5000/api/expenses"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "87"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"57-pbtWQdXPewfpP34AfgKhb5q3SeY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:07:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Expense added successfully\",\n    \"id\": \"68f4feb70e8615a93d8051f0\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create_expenses_travel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Vacation\",\r\n  \"amount\": 10000,\r\n  \"category\": \"Travel\",\r\n  \"date\": \"2025-10-19\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/api/expenses"
+					},
+					"response": [
+						{
+							"name": "create_expenses",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Vacation\",\r\n  \"amount\": 10000,\r\n  \"category\": \"Travel\",\r\n  \"date\": \"2025-10-19\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:5000/api/expenses"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "87"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"57-DxfEPwspxU3vRbDNqea3fheHbqc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:14:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Expense added successfully\",\n    \"id\": \"68f500660e8615a93d8051f4\"\n}"
+						}
+					]
+				},
+				{
+					"name": "view_all_expenses",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/api/expenses/"
+					},
+					"response": [
+						{
+							"name": "view_expenses",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:5000/api/expenses/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "272"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"110-1DVC8bQFTYR68WA/i83otWyPWxo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:15:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"count\": 2,\n    \"data\": [\n        {\n            \"id\": \"68f4feb70e8615a93d8051f0\",\n            \"title\": \"Lunch\",\n            \"amount\": 250,\n            \"category\": \"Food\",\n            \"date\": \"2025-10-19T00:00:00.000Z\"\n        },\n        {\n            \"id\": \"68f500660e8615a93d8051f4\",\n            \"title\": \"Vacation\",\n            \"amount\": 10000,\n            \"category\": \"Travel\",\n            \"date\": \"2025-10-19T00:00:00.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "view_expenses_by_date",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/expenses/?startDate=2025-10-01&endDate=2025-10-31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"expenses",
+								""
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2025-10-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2025-10-31"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "view_expenses_by_date",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/expenses/?startDate=2025-10-01&endDate=2025-10-31",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"expenses",
+										""
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2025-10-01"
+										},
+										{
+											"key": "endDate",
+											"value": "2025-10-31"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "272"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"110-1DVC8bQFTYR68WA/i83otWyPWxo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:18:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"count\": 2,\n    \"data\": [\n        {\n            \"id\": \"68f4feb70e8615a93d8051f0\",\n            \"title\": \"Lunch\",\n            \"amount\": 250,\n            \"category\": \"Food\",\n            \"date\": \"2025-10-19T00:00:00.000Z\"\n        },\n        {\n            \"id\": \"68f500660e8615a93d8051f4\",\n            \"title\": \"Vacation\",\n            \"amount\": 10000,\n            \"category\": \"Travel\",\n            \"date\": \"2025-10-19T00:00:00.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "view_expenses_by_id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/api/expenses/68f500660e8615a93d8051f4"
+					},
+					"response": [
+						{
+							"name": "view_expenses_by_id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:5000/api/expenses/68f500660e8615a93d8051f4"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "145"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"91-50+YETTIYyvQ3UJ5OnM2rlWVRzg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:26:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": \"68f500660e8615a93d8051f4\",\n        \"title\": \"Vacation\",\n        \"amount\": 10000,\n        \"category\": \"Travel\",\n        \"date\": \"2025-10-19T00:00:00.000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update_expenses_by_id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"World Trip\",\r\n  \"amount\": 500000,\r\n  \"category\": \"Travel\",\r\n  \"date\": \"2025-10-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/api/expenses/68f500660e8615a93d8051f4"
+					},
+					"response": [
+						{
+							"name": "update_expenses_by_id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"World Trip\",\r\n  \"amount\": 500000,\r\n  \"category\": \"Travel\",\r\n  \"date\": \"2025-10-12\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:5000/api/expenses/68f500660e8615a93d8051f4"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-VK9RHujacVmQ5KfOVpx1baqHNao\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:29:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Expense updated successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete_expense_by_id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://localhost:5000/api/expenses/68f5053b0e8615a93d8051fe"
+					},
+					"response": [
+						{
+							"name": "delete_expense_by_id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": "http://localhost:5000/api/expenses/68f5053b0e8615a93d8051fe"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-7ywmBBvUD0l03N9zWisHQIKnoZI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:37:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Expense deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "get_monthly_report",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/reports/monthly?month=10&year=2025",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"reports",
+								"monthly"
+							],
+							"query": [
+								{
+									"key": "month",
+									"value": "10"
+								},
+								{
+									"key": "year",
+									"value": "2025"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get_monthy_report",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/reports/monthly?month=10&year=2025",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reports",
+										"monthly"
+									],
+									"query": [
+										{
+											"key": "month",
+											"value": "10"
+										},
+										{
+											"key": "year",
+											"value": "2025"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3f-AqbU3jZjkuViqf2xTozCBvFHPjs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:44:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"total\": 250,\n        \"categories\": {\n            \"Food\": 250\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get_category_report",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/reports/category?category=Food",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"reports",
+								"category"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "Food"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/reports/category?category=Food",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reports",
+										"category"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "Food"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "132"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"84-/KBWkRJo1ZWklAsvgioVO8trcG8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:46:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"count\": 1,\n    \"data\": [\n        {\n            \"id\": \"68f4feb70e8615a93d8051f0\",\n            \"title\": \"Lunch\",\n            \"amount\": 250,\n            \"date\": \"2025-10-19T00:00:00.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Testing_with_invalid_values",
+			"item": [
+				{
+					"name": "Invalid_Category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/reports/category?category=Cake",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"reports",
+								"category"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "Cake"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Invalid_Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/reports/category?category=Cake",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reports",
+										"category"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "Cake"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "108"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6c-q6srqri++e7OLs1zqnGmVq6kyYk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:49:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Validation failed\",\n    \"errors\": [\n        {\n            \"field\": \"category\",\n            \"message\": \"Invalid category\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Invalid_expense_id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/api/expenses/@ahah{}AS68f500660e8615a93d8051f4[]"
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:5000/api/expenses/@ahah{}AS68f500660e8615a93d8051f4[]"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"68-isOb0ZLOaPcr7svBN8oHalqy9fE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:52:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Validation failed\",\n    \"errors\": [\n        {\n            \"field\": \"id\",\n            \"message\": \"Invalid expense ID\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "missing_values",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjlkMjEzMGZlZjAyNTg3ZmQ4ODYxODg2OTgyMjczNGVmNzZhMTExNjUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXhwZW5zZS10cmFja2VyLXdlYnNpdGUtMjM3NTUiLCJhdWQiOiJleHBlbnNlLXRyYWNrZXItd2Vic2l0ZS0yMzc1NSIsImF1dGhfdGltZSI6MTc2MDg4NjI1NiwidXNlcl9pZCI6InJvbTRsMnJ3bDVYOHZEa1l5ZXZmck1MdlMxNzIiLCJzdWIiOiJyb200bDJyd2w1WDh2RGtZeWV2ZnJNTHZTMTcyIiwiaWF0IjoxNzYwODg2MjU2LCJleHAiOjE3NjA4ODk4NTYsImVtYWlsIjoiaGFyaXNoQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJoYXJpc2hAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.GDlE6Uk6kPAe8Y7KKsSd9Q8C4iHLrcZuYNsx5uQhbDulkgzQH2mhHbg2g_9S1zas8enpZ3y0M489ZvhB-XbDoEQp5N24hHfM3M5szCWxAPdibZ9DKenYZGk4NZ1dPE119v8dr7Egs0cVW2onPJrN-EBGpe8r3lY2MXd56sFSinrd0J8SxpMzlXY7r_L299sSFS5uSUTcg8CNnS-B4py0p_glmlKNZcpk-owBVSHFpFsMaOl_VcLy-WQvgOHk2WLF8HLcOZHR7CGWjGSQCQDMxbV0P1CyLeTfr_9iGsIpd8oXAjfhENNMZtI7HS5hyBJIMJ2qDIEKgsioRo0ujvkigA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Incomplete Expense\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/api/expenses"
+					},
+					"response": [
+						{
+							"name": "missing_values",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Incomplete Expense\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:5000/api/expenses"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "298"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12a-Gsq0sYOZlDU5ht8v424u56FLfsM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 15:53:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Validation failed\",\n    \"errors\": [\n        {\n            \"field\": \"amount\",\n            \"message\": \"Amount must be a positive number\"\n        },\n        {\n            \"field\": \"category\",\n            \"message\": \"Category is required\"\n        },\n        {\n            \"field\": \"category\",\n            \"message\": \"Invalid category\"\n        },\n        {\n            \"field\": \"date\",\n            \"message\": \"Valid date is required (YYYY-MM-DD format)\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
