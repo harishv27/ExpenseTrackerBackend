@@ -511,7 +511,6 @@ Run the entire collection:
 
 
 
-
 ## 📄 License
 
 This project is part of a technical assessment for KonnichiWow Backend Developer Intern position.
@@ -519,8 +518,8 @@ This project is part of a technical assessment for KonnichiWow Backend Developer
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@harish](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@Harish](https://github.com/harishv27)
+- Email: hariakash2712@gmail.com
 
 ## 🙏 Acknowledgments
 
